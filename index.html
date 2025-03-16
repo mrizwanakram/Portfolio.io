@@ -12,23 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/projects/profile1.png" type="image/x-png">
+    <!-- Added Styles for Spacing and Hidden Projects -->
+    <style>
+        section {
+            margin-bottom: 50px; /* Adds space between all sections */
+        }
+        .hidden {
+            display: none; /* Hides projects beyond the first 6 */
+        }
+    </style>
     <title>Portfolio | M.Rizwan</title>
 </head>
 <body oncontextmenu="return false">
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
-
-
 <!-- navbar starts -->
 <header>
-        <a href="#home" class="logo"><i class="fab fa-node-js"></i> M.Rizwan </a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
+    <a href="#home" class="logo"><i class="fab fa-node-js"></i> M.Rizwan </a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -37,858 +39,944 @@
             <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        </ul>
+    </nav>
 </header>
 <!-- navbar ends -->
 
 <!-- hero section starts -->
 <section class="home" id="home">
     <div id="particles-js"></div>
-
     <div class="content">
-    <h2>Hi There,<br/> I'm<span> M.Rizwan</span></h2>
-    <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-            <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a class="github" aria-label="GitHub" href="https://github.com/mrizwanakram/" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-         
-        </ul>
-      </div>
+        <h2>Hi There,<br/> I'm<span> M.Rizwan</span></h2>
+        <p>i am into <span class="typing-text"></span></p>
+        <a href="#about" class="btn"><span>About Me</span>
+            <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+            <ul class="social-icons">
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a class="github" aria-label="GitHub" href="https://github.com/mrizwanakram/" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+            </ul>
+        </div>
     </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/projects/hero.png" alt="">
-</div>
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/projects/hero.png" alt="">
+    </div>
 </section>
 <!-- hero section ends -->
-
 
 <!-- about section starts -->
 <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
     <div class="row">
-
-      <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/projects/my pic.jpg" alt="" style="width: 500px; height: 500px;">
+        <div class="image">
+            <img draggable="false" class="tilt" src="./assets/images/projects/my pic.jpg" alt="" style="width: 500px; height: 500px;">
+        </div>
+        <div class="content">
+            <h3 style="font-size: 45px;">I'm Rizwan</h3>
+            <span class="tag" style="font-size: 25px;">Full Stack AI/ML Engineer With Expertise in:</span>
+            <ul style="font-size: 18px;">
+                <li>Python Development</li>
+                <li>Machine Learning Development</li>
+                <li>Deep Learning Development</li>
+                <li>Generative AI Development</li>
+                <li>Django Development</li>
+                <li>Web Development</li>
+            </ul>
+            <p style="font-size: 22px;"><strong>Professional Experience:</strong></p>
+            <p style="font-size: 18px;">
+                Strong background in Python, Django, Machine Learning, and Deep Learning techniques, with proficiency in building predictive models.
+                Experienced in developing robust web applications using Django and REST APIs with DRF. Skilled in implementing
+                Natural Language Processing (NLP) solutions and integrating AI models. Expertise in creating Generative AI applications and deploying them for real-time data processing.
+            </p>
+            <div class="box-container" style="font-size: 25px;">
+                <div class="box">
+                    <p style="font-size: 20px;"><span> email : </span> mrizwanoffical@gmail.com</p>
+                    <p style="font-size: 20px;"><span> place : </span> Lahore, Pakistan</p>
+                </div>
+            </div>
+            <div class="resumebtn">
+                <a href="https://drive.google.com/file/d/1Yk7AvWkePyCdCKCXGDt-Sdcqi7gheAK_/view?usp=sharing/view" target="_blank" class="btn">
+                    <span>Resume</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
     </div>
-    
-    <div class="content">
-      <h3 style="font-size: 45px;">I'm Rizwan</h3>
-      <span class="tag" style="font-size: 25px;">Full Stack AI/ML Engineer With Expertise in:</span>
-  
-      <!-- <p style="font-size: 18px;"><strong>Full Stack Developer</strong> with expertise in:</p> -->
-      <ul style="font-size: 18px;">
-          <li>Python Development</li>
-          <li>Machine Learning Development</li>
-          <li>Deep Learning Development</li>
-          <li>Generative AI Development</li>
-          <li>Django Development</li>
-          <li>Web Development</li>
-      </ul>
-  
-      <p style="font-size: 22px;"><strong>Professional Experience:</strong></p>
-      <p style="font-size: 18px;">
-        Strong background in Python, Django, Machine Learning, and Deep Learning techniques, with proficiency in building predictive models.
-         Experienced in developing robust web applications using Django and REST APIs with DRF. Skilled in implementing
-          Natural Language Processing (NLP) solutions and integrating AI models. Expertise in creating Generative AI applications and deploying them for real-time data processing.
-    </p>
-    
-      <div class="box-container" style="font-size: 25px;">
-          <div class="box">
-              <p style="font-size: 20px;"><span> email : </span> mrizwanoffical@gmail.com</p>
-              <p style="font-size: 20px;"><span> place : </span> Lahore, Pakistan</p>
-          </div>
-      </div>
-  
-      <div class="resumebtn">
-          <a href="https://drive.google.com/file/d/1Yk7AvWkePyCdCKCXGDt-Sdcqi7gheAK_/view?usp=sharing/view" target="_blank" class="btn">
-              <span>Resume</span>
-              <i class="fas fa-chevron-right"></i>
-          </a>
-      </div>
-  </div>
-  
-    
-
-    </div>
-    </div>
-<!-- about section ends -->
-
-<!-- skills section starts -->
+</section>
 <!-- about section ends -->
 
 <!-- skills section starts -->
 <section class="skills" id="skills">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-  <div class="container">
-      <div class="row" id="skillsContainer">
-
-          <!-- Skill 1: Python -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/color/100/000000/python.png"/>
-                  <span>Python</span>
-              </div>
-          </div>
-
-          <!-- Skill 1: Python -->
-          <div class="bar">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills by Job Category</h2>
+    <div class="container">
+        
+<!-- Data Science Category -->
+<div class="category" style="margin-bottom: 40px;">
+    <h3 class="category-title">Data Science</h3>
+    <div class="row">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=gTN9eaZkKLFI&format=png&color=000000"/>
-                <span>Machine Learning</span>
+                <img src="https://img.icons8.com/color/100/000000/python.png" alt="Python"/>
+                <span>Python</span>
             </div>
         </div>
-
-          <!-- Skill 1: Python -->
-          <div class="bar">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=114322&format=png&color=000000"/>
-                <span>Deep Learning</span>
+                <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" alt="R"/>
+                <span>R</span>
             </div>
         </div>
-
-          <!-- Skill 7: TensorFlow -->
-          <div class="bar">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/color/100/000000/tensorflow.png"/>
+                <img src="https://img.icons8.com/color/100/000000/pandas.png" alt="Pandas"/>
+                <span>Pandas</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/numpy.png" alt="NumPy"/>
+                <span>NumPy</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=jQhWk5R601OC&format=png&color=000000" alt="Scikit-learn"/>
+                <span>Scikit-learn</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/tensorflow.png" alt="TensorFlow"/>
                 <span>TensorFlow</span>
             </div>
         </div>
-
-          <!-- Skill 3: Pandas -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000"/>
-                  <span>Pandas</span>
-              </div>
-          </div>
-
-          <!-- Skill 4: NumPy -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/color/100/000000/numpy.png"/>
-                  <span>NumPy</span>
-              </div>
-          </div>
-          <!-- Skill 2: Jupyter -->
-          <div class="bar">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=qV-JzWYl9dzP&format=png&color=000000"/>
-                <span>Django</span>
+                <img src="https://img.icons8.com/?size=100&id=O6SWwpPIM0GB&format=png&color=000000" alt="PyTorch"/>
+                <span>PyTorch</span>
             </div>
         </div>
-          <!-- Skill 4: NumPy -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
-                  <span>HTML</span>
-              </div>
-          </div>
-          <!-- Skill 4: NumPy -->
-          <div class="bar">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
-                <span>CSS</span>
+                <img src="https://img.icons8.com/?size=100&id=JukOYMli7R05&format=png&color=000000" alt="Matplotlib"/>
+                <span>Matplotlib</span>
             </div>
         </div>
-          <!-- Skill 4: NumPy -->
-          <div class="bar">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000"/>
-                <span>BootStrape</span>
+                <img src="https://img.icons8.com/?size=100&id=ibuQHJm1Jtzg&format=png&color=000000" alt="Seaborn"/>
+                <span>Seaborn</span>
             </div>
         </div>
-          <!-- Skill 9: SQL -->
-          <div class="bar">
+        <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000"/>
+                <img src="https://img.icons8.com/color/100/000000/sql.png" alt="SQL"/>
                 <span>SQL</span>
             </div>
         </div>
-
-        <!-- Skill 9: SQL -->
         <div class="bar">
-          <div class="info">
-              <img src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"/>
-              <span>PostgreSQL</span>
-          </div>
-      </div>
-          <!-- Skill 5: Matplotlib -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000"/>
-                  <span>Git</span>
-              </div>
-          </div>
-
-          <!-- Skill 6: Scikit-Learn -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/?size=70&id=lOqoeP2Zy02f&format=png&color=000000"/>
-                  <span>Google Colab</span>
-              </div>
-          </div>
-
-
-          <!-- Skill 8: Keras -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"/>
-                  <span>AWS</span>
-              </div>
-          </div>
-
-
-          <!-- Skill 10: Tableau -->
-          <div class="bar">
-              <div class="info">
-                  <img src="https://img.icons8.com/color/100/000000/tableau-software.png"/>
-                  <span>Tableau</span>
-              </div>
-          </div>
-          <div class="bar">
             <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=Ny0t2MYrJ70p&format=png&color=000000"/>
+                <img src="https://img.icons8.com/color/100/000000/apache-spark.png" alt="Apache Spark"/>
+                <span>Apache Spark</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/statistics.png" alt="Statistical Analysis"/>
+                <span>Statistical Analysis</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=43660&format=png&color=000000" alt="Data Visualization"/>
+                <span>Data Visualization</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=cs4u3LDfPCh2&format=png&color=000000" alt="Machine Learning"/>
+                <span>Machine Learning</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=oOOSYZyuA844&format=png&color=000000" alt="Deep Learning"/>
+                <span>Deep Learning</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Web Development Category -->
+        <div class="category" style="margin-bottom: 40px;">
+            <h3 class="category-title">Web Development</h3>
+            <div class="row">
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/python.png" alt="Python"/>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/?size=100&id=TpULddJc4gTh&format=png&color=000000" alt="c++"/>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/html-5.png" alt="HTML"/>
+                        <span>HTML</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/css3.png" alt="CSS"/>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/?size=100&id=EzPCiQUqWWEa&format=png&color=000000" alt="BootStrape"/>
+                        <span>BootStrape</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/django.png" alt="Django"/>
+                        <span>Django</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & Machine Learning Category -->
+<!-- AI & Machine Learning Category -->
+<div class="category" style="margin-bottom: 40px;">
+    <h3 class="category-title">AI & Machine Learning</h3>
+    <div class="row">
+        <!-- Machine Learning -->
+ 
+
+        <!-- Natural Language Processing -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=TEiLRURnbBpn&format=png&color=000000" alt="Natural Language Processing"/>
+                <span>Natural Language Processing</span>
+            </div>
+        </div>
+        <!-- Chatbot Development -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=117195&format=png&color=000000" alt="Chatbot Development"/>
+                <span>Chatbot Development</span>
+            </div>
+        </div>
+        <!-- Speech Recognition -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=Y86OyOn2BNvY&format=png&color=000000" alt="Speech Recognition"/>
+                <span>Speech Recognition</span>
+            </div>
+        </div>
+        <!-- Computer Vision -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=apebs8fnmi4m&format=png&color=000000" alt="Computer Vision"/>
+                <span>Computer Vision</span>
+            </div>
+        </div>
+
+        <!-- Image Recognition -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=481XKFPqzPnB&format=png&color=000000" alt="Image Recognition"/>
+                <span>Image Recognition</span>
+            </div>
+        </div>
+        <!-- Object Detection -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=j53TKrAl0C6U&format=png&color=000000" alt="Object Detection"/>
+                <span>Object Detection</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Data Analysis Category -->
+<div class="category" style="margin-bottom: 40px;">
+    <h3 class="category-title">Data Analysis</h3>
+    <div class="row">
+        <!-- Python -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/python.png" alt="Python"/>
+                <span>Python</span>
+            </div>
+        </div>
+        <!-- SQL -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/sql.png" alt="SQL"/>
+                <span>SQL</span>
+            </div>
+        </div>
+        <!-- Tableau -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/tableau-software.png" alt="Tableau"/>
+                <span>Tableau</span>
+            </div>
+        </div>
+        <!-- Excel -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/ms-excel.png" alt="Excel"/>
+                <span>Excel</span>
+            </div>
+        </div>
+        <!-- Power BI -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/power-bi.png" alt="Power BI"/>
                 <span>Power BI</span>
             </div>
         </div>
+        <!-- R Programming -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" alt="R Programming"/>
+                <span>R Programming</span>
+            </div>
+        </div>
+        <!-- Pandas -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/pandas.png" alt="Pandas"/>
+                <span>Pandas</span>
+            </div>
+        </div>
+        <!-- NumPy -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/color/100/000000/numpy.png" alt="NumPy"/>
+                <span>NumPy</span>
+            </div>
+        </div>
+        <!-- Matplotlib -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=JukOYMli7R05&format=png&color=000000" alt="Matplotlib"/>
+                <span>Matplotlib</span>
+            </div>
+        </div>
+        <!-- Seaborn -->
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=ibuQHJm1Jtzg&format=png&color=000000" alt="Seaborn"/>
+                <span>Seaborn</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- DevOps & Cloud Category -->
+        <div class="category" style="margin-bottom: 40px;">
+            <h3 class="category-title">DevOps & Cloud</h3>
+            <div class="row">
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/amazon-web-services.png" alt="AWS"/>
+                        <span>AWS</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/?size=100&id=PJVoaac1LEJy&format=png&color=000000" alt="digital ocean"/>
+                        <span>Digital Ocean</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/git.png" alt="Git"/>
+                        <span>Git</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/color/100/000000/ubuntu.png" alt="Ubuntu"/>
+                        <span>Ubuntu</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" alt="Linux"/>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- Generative AI Category -->
+<div class="category" style="margin-bottom: 40px;">
+    <h3 class="category-title">Generative AI</h3>
+    <div class="row">
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=aJx5X4QVlRdA&format=png&color=000000" alt="GANs"/>
+                <span>GANs</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=zzhjW2dkRmjW&format=png&color=000000" alt="Transformers"/>
+                <span>Transformers</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=VCrh3A8P2xA3&format=png&color=000000" alt="Prompt Engineering"/>
+                <span>Prompt Engineering</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=8HJUfDVKSoJv&format=png&color=000000" alt="Variational Autoencoders (VAEs)"/>
+                <span>Variational Autoencoders (VAEs)</span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=HWI4BMCAnHra&format=png&color=000000" alt="Diffusion Models"/>
+                <span>Diffusion Models</span>
+            </div>
+        </div>
 
         <div class="bar">
-          <div class="info">
-              <img src="https://img.icons8.com/?size=100&id=63208&format=png&color=000000
-              "/>
-              <span>Ubuntu</span>
-          </div>
-      </div>
+            <div class="info">
+                <img src="https://img.icons8.com/?size=100&id=iQw1vvRXCjAh&format=png&color=000000" alt="Image Synthesis"/>
+                <span>Image Synthesis</span>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-      </div>
-  </div>
+    </div>
 </section>
-
 <!-- skills section ends -->
-
 
 <!-- education section starts -->
 <section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
     <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
     <div class="box-container">
-
-
-      <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/educat/kicks.jpg" alt="">
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/kicks.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Artificial Intelligence (Machine Learning and Deep Learning)</h3>
+                <p>AL Khawarizmi Institute of Computer science, UET Lahore</p>
+                <h4> Feb-2022 - Sep-2022 | Completed</h4>
+            </div>
         </div>
-        <div class="content">
-        <h3>Artificial Intelligence (Machine Learning and Deep Learning)</h3>
-        <p>AL Khawarizmi Institute of Computer science, UET Lahore</p>
-        <h4> Mar-2023 - Sep-2023 | Completed</h4>
-      </div>
-      </div>
-
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/educat/virtual-university-of-pakistan.webp" alt="">
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/virtual-university-of-pakistan.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>Virtual University of Pakistan | Lahore</p>
+                <h4>03/2020-04/2024 | Completed</h4>
+            </div>
         </div>
-        <div class="content">
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>Virtual University of Pakistan | Lahore</p>
-        <h4>2019-2023 | Completed</h4>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/corvit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Artificial Intelligence (Python, Machine Learning) </h3>
+                <p>Corvit Systems Lahore</p>
+                <h4>Jun-2021 - Nov-2021 | Completed</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/pgc.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Faculty of Science (FSc) </h3>
+                <p>Punjab Group of Colleges</p>
+                <h4>04/2017-02/2020 | Completed</h4>
+            </div>
         </div>
     </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/corvit.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>Artificial Intelligence (Python, Machine Learning) </h3>
-      <p>Corvit Systems Lahore</p>
-      <h4>Jun-2021 - Dec-2021 | Completed</h4>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/pgc.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>Faculty of Science (FSc) </h3>
-      <p>Punjab Group of Colleges</p>
-      <h4>2017-2019 | Completed</h4>
-      </div>
-    </div>
-
-
-
-
-</div>
 </section>
 <!-- education section ends -->
 
-
-<!-- Certification Section Start Here-->
-
-<!-- work project section starts -->
+<!-- certifications section starts -->
 <section class="work" id="Certifications">
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Certifications <span></span></h2>
-
-  <div class="box-container">
-
-      <!-- Second Image Box -->
-      <div class="box tilt">
-        <img draggable="false" src="./assets/images/certificates_and_courses_images/ai_cer.png" alt="Data Analytics & BI Training" style="width: 100%; height: auto;" />
-        <div class="content">
-            <div class="tag">
-                <h3>Artificial Intelligence Course</h3>
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Certifications <span></span></h2>
+    <div class="box-container">
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/certificates_and_courses_images/ai_cer.png" alt="Artificial Intelligence Course" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Artificial Intelligence Course</h3>
+                </div>
+                <div class="desc">
+                    <p>The course covered essential AI topics, including machine learning, deep learning, and NLP, with a focus on real-world applications and hands-on experience.</p>
+                    <div class="btns">
+                        <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/ai_cer.png"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
             </div>
-            <div class="desc">
-                <p>
-                  The course covered essential AI topics, including machine learning, deep learning, and NLP, with a focus on real-world applications and hands-on experience.</p>
-                <div class="btns">
-                    <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/ai_cer.png"><i class="fas fa-eye"></i> View</a>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/certificates_and_courses_images/cloud_computting.png" alt="Huawei Cloud Computing Certificate" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Huawei Cloud Computing Certificate</h3>
+                </div>
+                <div class="desc">
+                    <p>Certified in cloud architecture and deployment on Huawei Cloud, with a focus on storage, networking, and security.</p>
+                    <div class="btns">
+                        <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/cloud_computting.png"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/certificates_and_courses_images/Data_analyst.png" alt="Data Analytics & BI Training" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Data Analytics & BI Training</h3>
+                </div>
+                <div class="desc">
+                    <p>Gained skills in data analytics and BI tools, focusing on data visualization and analysis techniques. Hands-on experience with platforms like Python, R and Power BI</p>
+                    <div class="btns">
+                        <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/Data_analyst.png"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/certificates_and_courses_images/Data_science.png" alt="Data Science With Python" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Data Science With Python</h3>
+                </div>
+                <div class="desc">
+                    <p>Learned data analysis and visualization techniques using Python, covering libraries like Pandas and Matplotlib for practical data science applications.</p>
+                    <div class="btns">
+                        <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/Data_science.png"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/certificates_and_courses_images/HCAI.jpg.png" alt="Artificial Intelligence Certificate" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Artificial Intelligence Certificate</h3>
+                </div>
+                <div class="desc">
+                    <p>Certified in Huawei Artificial Intelligence, focusing on AI concepts, machine learning algorithms, and practical applications for real-world problem-solving.</p>
+                    <div class="btns">
+                        <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/HCAI.jpg.png"><i class="fas fa-eye"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/certificates_and_courses_images/kicks_ai_cer.jpg" alt="AI (ML & DL) Course" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>AI (ML & DL) Course</h3>
+                </div>
+                <div class="desc">
+                    <p>The course covered essential AI topics, including machine learning, deep learning, and NLP, with a focus on real-world applications and hands-on experience.</p>
+                    <div class="btns">
+                        <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/kicks_ai_cer.jpg"><i class="fas fa-eye"></i> View</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-      <!-- First Image Box -->
-      <div class="box tilt">
-          <img draggable="false" src="./assets/images/certificates_and_courses_images/cloud_computting.png" alt="Huawei Cloud Computing Certificate" style="width: 100%; height: auto;" />
-          <div class="content">
-              <div class="tag">
-                  <h3>Huawei Cloud Computing Certificate</h3>
-              </div>
-              <div class="desc">
-                  <p>Certified in cloud architecture and deployment on Huawei Cloud, with a focus on storage, networking, and security.
-
-                  </p>
-                  <div class="btns">
-                      <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/cloud_computting.png"><i class="fas fa-eye"></i> View</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Second Image Box -->
-      <div class="box tilt">
-          <img draggable="false" src="./assets/images/certificates_and_courses_images/Data_analyst.png" alt="Data Analytics & BI Training" style="width: 100%; height: auto;" />
-          <div class="content">
-              <div class="tag">
-                  <h3>Data Analytics & BI Training</h3>
-              </div>
-              <div class="desc">
-                  <p>Gained skills in data analytics and BI tools, focusing on data visualization and analysis techniques. Hands-on experience with platforms like Python, R and Power BI</p>
-                  <div class="btns">
-                      <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/Data_analyst.png"><i class="fas fa-eye"></i> View</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-      <!-- Second Image Box -->
-      <div class="box tilt">
-        <img draggable="false" src="./assets/images/certificates_and_courses_images/Data_science.png" alt="Data Analytics & BI Training" style="width: 100%; height: auto;" />
-        <div class="content">
-            <div class="tag">
-                <h3>Data Science With Python</h3>
-            </div>
-            <div class="desc">
-                <p>Learned data analysis and visualization techniques using Python, covering libraries like Pandas and Matplotlib for practical data science applications.</p>
-                <div class="btns">
-                    <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/Data_science.png"><i class="fas fa-eye"></i> View</a>
-                </div>
-            </div>
-        </div>
+    <div class="viewall">
+        <a href="#Certifications" class="btn"><span>View All</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
     </div>
-
-
-    
-      <!-- Second Image Box -->
-      <div class="box tilt">
-        <img draggable="false" src="./assets/images/certificates_and_courses_images/HCAI.jpg.png" alt="Data Analytics & BI Training" style="width: 100%; height: auto;" />
-        <div class="content">
-            <div class="tag">
-                <h3>Artificial Intelligence Certificate</h3>
-            </div>
-            <div class="desc">
-                <p>Certified in Huawei Artificial Intelligence, focusing on AI concepts, machine learning algorithms, and practical applications for real-world problem-solving.</p>
-                <div class="btns">
-                    <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/HCAI.jpg.png"><i class="fas fa-eye"></i> View</a>
-                </div>
-            </div>
-        </div>
+    <!-- Modal for displaying the large image -->
+    <div id="imageModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="largeImage">
     </div>
-
-
-    
-
-
-
-    
-      <!-- Second Image Box -->
-      <div class="box tilt">
-        <img draggable="false" src="./assets/images/certificates_and_courses_images/kicks_ai_cer.jpg" alt="Data Analytics & BI Training" style="width: 100%; height: auto;" />
-        <div class="content">
-            <div class="tag">
-                <h3>AI (ML & DL ) Course</h3>
-            </div>
-            <div class="desc">
-                <p>The course covered essential AI topics, including machine learning, deep learning, and NLP, with a focus on real-world applications and hands-on experience.</p>
-                <div class="btns">
-                    <a href="#" class="btn viewBtn" data-img="./assets/images/certificates_and_courses_images/kicks_ai_cer.jpg"><i class="fas fa-eye"></i> View</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    
-
-      <!-- Modal for displaying the large image -->
-      <div id="imageModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="largeImage">
-      </div>
-
-      <!-- JavaScript to handle modal functionality -->
-      <script>
-          // Get all the view buttons
-          const viewButtons = document.querySelectorAll('.viewBtn');
-          const modal = document.getElementById('imageModal');
-          const modalImg = document.getElementById('largeImage');
-          const closeModal = document.querySelector('.close');
-
-          // Add click event to each button
-          viewButtons.forEach(button => {
-              button.addEventListener('click', function(event) {
-                  event.preventDefault(); // Prevent default anchor click behavior
-                  const imgSrc = this.getAttribute('data-img'); // Get the image source from data attribute
-                  modalImg.src = imgSrc; // Set the modal image source
-                  modal.style.display = "block"; // Show the modal
-              });
-          });
-
-          // Close the modal when the user clicks on <span> (x)
-          closeModal.onclick = function() {
-              modal.style.display = "none";
-          };
-
-          // Close the modal when clicking outside of the modal image
-          window.onclick = function(event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          };
-      </script>
-
-      <style>
-          /* Center the button within its container */
-          .btns {
-              display: flex;
-              justify-content: center; /* Center horizontally */
-              margin-top: 10px; /* Optional: add some space above the button */
-          }
-
-          /* Modal styles (unchanged) */
-          .modal {
-              display: none; /* Hidden by default */
-              position: fixed; /* Stay in place */
-              z-index: 1000; /* Sit on top */
-              left: 0;
-              top: 0;
-              width: 100%; /* Full width */
-              height: 100%; /* Full height */
-              overflow: auto; /* Enable scroll if needed */
-              background-color: rgb(0,0,0); /* Fallback color */
-              background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-          }
-
-          .modal-content {
-              margin: auto;
-              display: block;
-              width: auto; /* Could be more or less, depending on screen size */
-              max-width: 90%; /* Responsive image */
-          }
-
-          .close {
-              position: absolute;
-              top: 15px;
-              right: 35px;
-              color: #fff;
-              font-size: 40px;
-              font-weight: bold;
-              transition: 0.3s;
-          }
-
-          .close:hover,
-          .close:focus {
-              color: #bbb;
-              text-decoration: none;
-              cursor: pointer;
-          }
-      </style>
-  </div>
-  <div class="viewall">
-      <a href="#Certifications" class="btn"><span>View All</span>
-          <i class="fas fa-arrow-right"></i>
-      </a>
-  </div>
+    <!-- JavaScript to handle modal functionality -->
+    <script>
+        const viewButtons = document.querySelectorAll('.viewBtn');
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('largeImage');
+        const closeModal = document.querySelector('.close');
+        viewButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const imgSrc = this.getAttribute('data-img');
+                modalImg.src = imgSrc;
+                modal.style.display = "block";
+            });
+        });
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+    <style>
+        .btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: auto;
+            max-width: 90%;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </section>
-<!-- work project section ends -->
-
-
-<!-- Certification Section End -->
-
-
-
-
-<!-- Replace the old project section with the new one -->
+<!-- certifications section ends -->
 
 <!-- work project section starts -->
 <section class="work" id="work">
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-
-  <div class="box-container">
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/nvidia.jpg" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Object Detection on Edge Devices</h3>
-          </div>
-          <div class="desc">
-              <p>Deployed MobileNet for real-time object detection on NVIDIA Jetson Nano, leveraging its lightweight architecture.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <div class="box-container">
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/nvidia.jpg" alt="Object Detection on Edge Devices" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Object Detection on Edge Devices</h3>
+                </div>
+                <div class="desc">
+                    <p>Deployed MobileNet for real-time object detection on NVIDIA Jetson Nano, leveraging its lightweight architecture.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/job-matching.png" alt="Resume Matcher With AI Model" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Resume Matcher With AI Model</h3>
+                </div>
+                <div class="desc">
+                    <p>AI-powered resume matcher that analyzes candidates against job descriptions to streamline recruitment. It enhances hiring acc by quickly identifying the best-fit Resumes.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/ecommrce.png" alt="E-Com Store Platform Development" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>E-Com Store Platform Development</h3>
+                </div>
+                <div class="desc">
+                    <p>Developed an e-com platform with user authentication, product management, and a REST API, ensuring a responsive interface for an enhanced shopping experience.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/number_plate_img.jpg" alt="Plate Recognition using DL" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Plate Recognition using DL</h3>
+                </div>
+                <div class="desc">
+                    <p>Deep learning-based plate recognition system that accurately identifies and processes vehicle license plates in real time.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/ars.jpg" alt="Automated Retail System (ARS)" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Automated Retail System (ARS)</h3>
+                </div>
+                <div class="desc">
+                    <p>Created a Ras_Pi-based retail solution that automates inventory management and customer transactions, enhancing efficiency in retail operations.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/flight-ticket-prices.jpeg" alt="Flight Ticket Fare Forecasting (FFF)" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Flight Ticket Fare Forecasting (FFF)</h3>
+                </div>
+                <div class="desc">
+                    <p>Developed a forecasting model using ML to predict flight ticket prices, enabling users to optimize travel costs based on data-driven insights</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/cyberbullying.jpg" alt="Cyberbullying Detection with ML" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Cyberbullying Detection with ML</h3>
+                </div>
+                <div class="desc">
+                    <p>Created a machine learning model to detect cyberbullying in online interactions, enabling early intervention and fostering safer online spaces.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/bi.webp" alt="BI Sales Report for Superstore" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>BI Sales Report for Superstore</h3>
+                </div>
+                <div class="desc">
+                    <p>A BI Sales Report for Superstore analyzes sales data to identify trends, measure performance, and provide insights for strategic decision-making.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="./assets/images/projects/food website.jpg" alt="Food & Veggie E-Commerce Website" style="width: 100%; height: auto;" />
+            <div class="content">
+                <div class="tag">
+                    <h3>Food & Veggie E-Commerce Website</h3>
+                </div>
+                <div class="desc">
+                    <p>A food and veggie e-commerce website for fresh produce, offering seamless online shopping, local delivery, and a wide variety of organic options.</p>
+                    <div class="btns">
+                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="https://github.com/mrizwanakram/Ecomerce-website-for-foods-and-Vegetables/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/job-matching.png" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Resume Matcher With AI Model</h3>
-          </div>
-          <div class="desc">
-              <p>AI-powered resume matcher that analyzes candidates against job descriptions to streamline recruitment. It enhances hiring acc by quickly identifying the best-fit Resumes.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/ecommrce.png" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>E-Com Store Platform Development</h3>
-          </div>
-          <div class="desc">
-              <p>Developed an e-com platform with user authentication, product management, and a REST API, ensuring a responsive interface for an enhanced shopping experience. </p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/number_plate_img.jpg" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Plate Recognition using DL</h3>
-          </div>
-          <div class="desc">
-              <p>Deep learning-based plate recognition system that accurately identifies and processes vehicle license plates in real time.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/ars.jpg" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Automated Retail System (ARS)</h3>
-          </div>
-          <div class="desc">
-              <p>Created a Ras_Pi-based retail solution that automates inventory management and customer transactions, enhancing efficiency in retail operations.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/flight-ticket-prices.jpeg" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Flight Ticket Fare Forecasting (FFF)</h3>
-          </div>
-          <div class="desc">
-              <p>Developed a forecasting model using ML to predict flight ticket prices, enabling users to optimize travel costs based on data-driven insights</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/cyberbullying.jpg" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Cyberbullying Detection with ML</h3>
-          </div>
-          <div class="desc">
-              <p>Created a machine learning model to detect cyberbullying in online interactions, enabling early intervention and fostering safer online spaces.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/bi.webp" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>BI Sales Report for Superstore</h3>
-          </div>
-          <div class="desc">
-              <p>A BI Sales Report for Superstore analyzes sales data to identify trends, measure performance, and provide insights for strategic decision-making.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/food website.jpg" alt="Portfolio Website" style="width: 100%; height: auto;" />
-      <div class="content">
-          <div class="tag">
-              <h3>Food & Veggie E-Commerce Website
-              </h3>
-          </div>
-          <div class="desc">
-              <p>A food and veggie e-commerce website for fresh produce, offering seamless online shopping, local delivery, and a wide variety of organic options.</p>
-              <div class="btns">
-                  <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                  <a href="https://github.com/mrizwanakram/Ecomerce-website-for-foods-and-Vegetables/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-
-    
-  </div>
     <div class="viewall">
-      <a href="#work" class="btn"><span>View All</span>
-        <i class="fas fa-arrow-right"></i>
-    </a>
+        <button id="view-more" class="btn"><span>View More</span>
+            <i class="fas fa-arrow-right"></i>
+        </button>
     </div>
- 
 </section>
 <!-- work project section ends -->
 
-
-<!-- work project section ends -->
-
-
-
-
-
 <!-- experience section starts -->
 <section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-  <div class="timeline">
-
-
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h1>Codezbit</h1>
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+    <div class="timeline">
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h1>Codezbit</h1>
+                </div>
+                <div class="desc">
+                    <h2>Python Developer</h2>
+                    <p>Feb, 2024 - Present</p>
+                </div>
+            </div>
         </div>
-        <div class="desc">
-            <h2>Python Developer</h2>
-            <p>Feb, 2024 - Present</p>
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2>AIOBC</h2>
+                </div>
+                <div class="desc">
+                    <h3>Machine Learning Engineer </h3>
+                    <p>Aug 2023 - Feb 2024</p>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="container left">
+            <div class="content">
+                <div class="tag">
+                    <h2>Machine Learning 1</h2>
+                </div>
+                <div class="desc">
+                    <h3>Data Science | Internship</h3>
+                    <p>Nov, 2022 - Jan 2023</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>AIOBC</h2>
-        </div>
-        <div class="desc">
-            <h3>Machine Learning Engineer </h3>
-            <p>Aug 2023 - Feb 2024</p>
-        </div>
-      </div>
+    <div class="morebtn">
+        <!-- <a href="../experience/index.html" class="btn"><span>View All</span> -->
+            <i class="fas fa-arrow-right"></i>
+        </a>
     </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Machine Learning 1</h2>
-        </div>
-        <div class="desc">
-            <h3>Data Science | Internship</h3>
-            <p>Nov, 2022 - Jan 2023</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="morebtn">
-    <a href="/experience" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-
-</div>
-
 </section>
 <!-- experience section ends -->
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img draggable="false" src="./assets/images/contact1.png" alt="">
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit">
+                        Submit <i class="fa fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
         </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
+    </div>
 </section>
 <!-- contact section ends -->
 
-
 <!-- footer section starts -->
 <section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Rizwan's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#Certifications"><i class="fas fa-chevron-circle-right"></i> Certifications</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+92 3098581002</p>
-          <p> <i class="fas fa-envelope"></i>mrizwanoffical786@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Lahore, Pakistan</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/mrizwanakram/" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:mrizwanoffical@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://twitter.com/" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
-          </div>
-      </div>
-  </div>
-
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216"> M.Rizwan</a></h1>
-
+    <div class="box-container">
+        <div class="box">
+            <h3>Rizwan's Portfolio</h3>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+            <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+            <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+            <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+            <a href="#Certifications"><i class="fas fa-chevron-circle-right"></i> Certifications</a>
+            <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i>+92 3098581002</p>
+            <p> <i class="fas fa-envelope"></i>mrizwanoffical786@gmail.com</p>
+            <p> <i class="fas fa-map-marked-alt"></i>Lahore, Pakistan</p>
+            <div class="share">
+                <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                <a href="https://github.com/mrizwanakram/" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                <a href="mailto:mrizwanoffical@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216"> M.Rizwan</a></h1>
 </section>
 <!-- footer section ends -->
-
 
 <!-- scroll top btn -->
 <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
 <!-- scroll back to top -->
 
+<!-- JavaScript for Project "View More" Functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var projects = document.querySelectorAll('.work#work .box.tilt');
+        if (projects.length <= 6) {
+            document.getElementById('view-more').style.display = 'none';
+        } else {
+            projects.forEach(function(project, index) {
+                if (index >= 6) {
+                    project.classList.add('hidden');
+                }
+            });
+        }
+    });
+
+    document.getElementById('view-more').addEventListener('click', function() {
+        var hiddenProjects = document.querySelectorAll('.work#work .box.tilt.hidden');
+        hiddenProjects.forEach(function(project) {
+            project.classList.remove('hidden');
+        });
+        this.style.display = 'none'; // Hide the button after clicking
+    });
+</script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
 <!-- jquery cdn -->
@@ -908,12 +996,11 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
 <script src="./assets/js/script.js"></script>
 
 </body>

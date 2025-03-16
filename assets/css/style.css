@@ -1267,3 +1267,13 @@ form .button-area {
 
 
 
+.category-title {
+  background-color: #f0f0f0; /* Light gray background for attractiveness */
+  color: #333; /* Dark text for contrast */
+  padding: 15px; /* Space inside the title box */
+  font-size: 28px; /* Larger font size */
+  text-align: center; /* Center the text */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the title */
+}
