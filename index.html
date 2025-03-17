@@ -20,6 +20,43 @@
         .hidden {
             display: none; /* Hides projects beyond the first 6 */
         }
+        .project-category {
+            margin-bottom: 40px;
+        }
+        .project-category h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .project-category .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-category .box {
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .project-category .box:hover {
+            transform: scale(1.05);
+        }
+        .view-more-btn {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .view-more-btn:hover {
+            background-color: #0056b3;
+        }
     </style>
     <title>Portfolio | M.Rizwan</title>
 </head>
@@ -114,7 +151,7 @@
 <section class="skills" id="skills">
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills by Job Category</h2>
     <div class="container">
-        
+
 <!-- Data Science Category -->
 <div class="category" style="margin-bottom: 40px;">
     <h3 class="category-title">Data Science</h3>
@@ -261,7 +298,6 @@
     <h3 class="category-title">AI & Machine Learning</h3>
     <div class="row">
         <!-- Machine Learning -->
- 
 
         <!-- Natural Language Processing -->
         <div class="bar">
@@ -308,7 +344,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Data Analysis Category -->
 <div class="category" style="margin-bottom: 40px;">
@@ -688,148 +723,162 @@
 <!-- work project section starts -->
 <section class="work" id="work">
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-    <div class="box-container">
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/nvidia.jpg" alt="Object Detection on Edge Devices" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Object Detection on Edge Devices</h3>
+    <div class="project-category">
+        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>AI & Machine Learning Projects</span></h3>
+        <div class="box-container">
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/nvidia.jpg" alt="Object Detection on Edge Devices" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Object Detection on Edge Devices</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Deployed MobileNet for real-time object detection on NVIDIA Jetson Nano, leveraging its lightweight architecture.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="desc">
-                    <p>Deployed MobileNet for real-time object detection on NVIDIA Jetson Nano, leveraging its lightweight architecture.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/job-matching.png" alt="Resume Matcher With AI Model" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Resume Matcher With AI Model</h3>
+                    </div>
+                    <div class="desc">
+                        <p>AI-powered resume matcher that analyzes candidates against job descriptions to streamline recruitment. It enhances hiring acc by quickly identifying the best-fit Resumes.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/job-matching.png" alt="Resume Matcher With AI Model" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Resume Matcher With AI Model</h3>
-                </div>
-                <div class="desc">
-                    <p>AI-powered resume matcher that analyzes candidates against job descriptions to streamline recruitment. It enhances hiring acc by quickly identifying the best-fit Resumes.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+    </div>
+    <div class="project-category">
+        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>Web Development Projects</span></h3>
+        <div class="box-container">
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/ecommrce.png" alt="E-Com Store Platform Development" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>E-Com Store Platform Development</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Developed an e-com platform with user authentication, product management, and a REST API, ensuring a responsive interface for an enhanced shopping experience.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/ecommrce.png" alt="E-Com Store Platform Development" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>E-Com Store Platform Development</h3>
-                </div>
-                <div class="desc">
-                    <p>Developed an e-com platform with user authentication, product management, and a REST API, ensuring a responsive interface for an enhanced shopping experience.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/food website.jpg" alt="Food & Veggie E-Commerce Website" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Food & Veggie E-Commerce Website</h3>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/number_plate_img.jpg" alt="Plate Recognition using DL" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Plate Recognition using DL</h3>
-                </div>
-                <div class="desc">
-                    <p>Deep learning-based plate recognition system that accurately identifies and processes vehicle license plates in real time.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/ars.jpg" alt="Automated Retail System (ARS)" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Automated Retail System (ARS)</h3>
-                </div>
-                <div class="desc">
-                    <p>Created a Ras_Pi-based retail solution that automates inventory management and customer transactions, enhancing efficiency in retail operations.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/flight-ticket-prices.jpeg" alt="Flight Ticket Fare Forecasting (FFF)" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Flight Ticket Fare Forecasting (FFF)</h3>
-                </div>
-                <div class="desc">
-                    <p>Developed a forecasting model using ML to predict flight ticket prices, enabling users to optimize travel costs based on data-driven insights</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/cyberbullying.jpg" alt="Cyberbullying Detection with ML" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Cyberbullying Detection with ML</h3>
-                </div>
-                <div class="desc">
-                    <p>Created a machine learning model to detect cyberbullying in online interactions, enabling early intervention and fostering safer online spaces.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/bi.webp" alt="BI Sales Report for Superstore" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>BI Sales Report for Superstore</h3>
-                </div>
-                <div class="desc">
-                    <p>A BI Sales Report for Superstore analyzes sales data to identify trends, measure performance, and provide insights for strategic decision-making.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box tilt">
-            <img draggable="false" src="./assets/images/projects/food website.jpg" alt="Food & Veggie E-Commerce Website" style="width: 100%; height: auto;" />
-            <div class="content">
-                <div class="tag">
-                    <h3>Food & Veggie E-Commerce Website</h3>
-                </div>
-                <div class="desc">
-                    <p>A food and veggie e-commerce website for fresh produce, offering seamless online shopping, local delivery, and a wide variety of organic options.</p>
-                    <div class="btns">
-                        <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <div class="desc">
+                        <p>A food and veggie e-commerce website for fresh produce, offering seamless online shopping, local delivery, and a wide variety of organic options.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
                         <a href="https://github.com/mrizwanakram/Ecomerce-website-for-foods-and-Vegetables/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="viewall">
-        <button id="view-more" class="btn"><span>View More</span>
-            <i class="fas fa-arrow-right"></i>
-        </button>
+    <div class="project-category">
+        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>Data Analysis Projects</span></h3>
+        <div class="box-container">
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/bi.webp" alt="BI Sales Report for Superstore" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>BI Sales Report for Superstore</h3>
+                    </div>
+                    <div class="desc">
+                        <p>A BI Sales Report for Superstore analyzes sales data to identify trends, measure performance, and provide insights for strategic decision-making.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/flight-ticket-prices.jpeg" alt="Flight Ticket Fare Forecasting (FFF)" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Flight Ticket Fare Forecasting (FFF)</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Developed a forecasting model using ML to predict flight ticket prices, enabling users to optimize travel costs based on data-driven insights</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="project-category">
+        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>Other Projects</span></h3>
+        <div class="box-container">
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/number_plate_img.jpg" alt="Plate Recognition using DL" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Plate Recognition using DL</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Deep learning-based plate recognition system that accurately identifies and processes vehicle license plates in real time.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/ars.jpg" alt="Automated Retail System (ARS)" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Automated Retail System (ARS)</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Created a Ras_Pi-based retail solution that automates inventory management and customer transactions, enhancing efficiency in retail operations.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/cyberbullying.jpg" alt="Cyberbullying Detection with ML" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Cyberbullying Detection with ML</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Created a machine learning model to detect cyberbullying in online interactions, enabling early intervention and fostering safer online spaces.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="view-more-btn">View More</button>
 </section>
 <!-- work project section ends -->
 
@@ -879,7 +928,7 @@
 </section>
 <!-- experience section ends -->
 
-<!-- contact section starts -->
+<<!-- contact section starts -->
 <section class="contact" id="contact">
     <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
     <div class="container">
@@ -894,7 +943,7 @@
                         <i class='fas fa-user'></i>
                     </div>
                     <div class="field">
-                        <input type="text" name="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                         <i class='fas fa-envelope'></i>
                     </div>
                     <div class="field">
@@ -916,6 +965,44 @@
     </div>
 </section>
 <!-- contact section ends -->
+
+<!-- EmailJS Script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+    })();
+</script>
+
+<!-- JavaScript to Handle Form Submission -->
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const phone = document.querySelector('input[name="phone"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+
+        // Send email using EmailJS
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+            from_name: name,
+            from_email: email,
+            phone: phone,
+            message: message
+        })
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Your message has been sent successfully!');
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('There was an error sending your message. Please try again later.');
+        });
+    });
+</script>
+
 
 <!-- footer section starts -->
 <section class="footer">
@@ -960,7 +1047,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         var projects = document.querySelectorAll('.work#work .box.tilt');
         if (projects.length <= 6) {
-            document.getElementById('view-more').style.display = 'none';
+            document.querySelector('.view-more-btn').style.display = 'none';
         } else {
             projects.forEach(function(project, index) {
                 if (index >= 6) {
@@ -970,7 +1057,7 @@
         }
     });
 
-    document.getElementById('view-more').addEventListener('click', function() {
+    document.querySelector('.view-more-btn').addEventListener('click', function() {
         var hiddenProjects = document.querySelectorAll('.work#work .box.tilt.hidden');
         hiddenProjects.forEach(function(project) {
             project.classList.remove('hidden');
