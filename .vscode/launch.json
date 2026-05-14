@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "e:\\My_Potfolio\\index.html"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }

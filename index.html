@@ -4,67 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Rizwan Akram, portfolio, Rizwan, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Rizwan's Portfolio. Full-Stack AI/ML Developer" />
+    <meta name="keywords" content="M. Rizwan, Full Stack AI Engineer, Generative AI, RAG, LangChain, Django, FastAPI, React, Next.js, portfolio" />
+    <meta name="description" content="M. Rizwan — Senior Full Stack AI Engineer. Generative AI, RAG, agent frameworks, and production full-stack systems." />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/projects/profile1.png" type="image/x-png">
-    <!-- Added Styles for Spacing and Hidden Projects -->
-    <style>
-        section {
-            margin-bottom: 50px; /* Adds space between all sections */
-        }
-        .hidden {
-            display: none; /* Hides projects beyond the first 6 */
-        }
-        .project-category {
-            margin-bottom: 40px;
-        }
-        .project-category h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .project-category .box-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .project-category .box {
-            flex: 1 1 calc(33.333% - 20px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .project-category .box:hover {
-            transform: scale(1.05);
-        }
-        .view-more-btn {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .view-more-btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-    <title>Portfolio | M.Rizwan</title>
+    <link id='favicon' rel="shortcut icon" href="./assets/images/projects/m-rizwan-profile.png" type="image/png">
+    <title>Portfolio | M. Rizwan</title>
 </head>
 <body oncontextmenu="return false">
 
 <!-- navbar starts -->
 <header>
-    <a href="#home" class="logo"><i class="fab fa-node-js"></i> M.Rizwan </a>
+    <a href="#home" class="logo"><i class="fab fa-node-js"></i> M. Rizwan </a>
     <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
         <ul>
@@ -85,7 +39,7 @@
 <section class="home" id="home">
     <div id="particles-js"></div>
     <div class="content">
-        <h2>Hi There,<br/> I'm<span> M.Rizwan</span></h2>
+        <h2>Hi There,<br/> I'm<span> M. Rizwan</span></h2>
         <p>i am into <span class="typing-text"></span></p>
         <a href="#about" class="btn"><span>About Me</span>
             <i class="fas fa-arrow-circle-down"></i>
@@ -100,7 +54,7 @@
         </div>
     </div>
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/projects/hero.png" alt="">
+        <img draggable="false" class="tilt" src="./assets/images/projects/m-rizwan-profile.png" alt="M. Rizwan">
     </div>
 </section>
 <!-- hero section ends -->
@@ -110,23 +64,22 @@
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
     <div class="row">
         <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/projects/eid.png" alt="" style="width: 400px; height: 400px;">
+            <img draggable="false" class="tilt" src="./assets/images/projects/m-rizwan-profile.png" alt="M. Rizwan">
         </div>
         <div class="content">
-            <h3 style="font-size: 45px;">I'm Rizwan</h3>
-            <span class="tag" style="font-size: 25px;">Full Stack Data Scientist</span>
-            <ul style="font-size: 18px;">
-            </ul>
-            <p style="font-size: 22px;"><strong>Professional Experience:</strong></p>
-            <p style="font-size: 18px;">
-                Strong background in Python, Django, Machine Learning, and Deep Learning techniques, with proficiency in building predictive models.
-                Experienced in developing robust web applications using Django and REST APIs with DRF. Skilled in implementing
-                Natural Language Processing (NLP) solutions and integrating AI models. Expertise in creating Generative AI applications and deploying them for real-time data processing.
+            <h3 class="about-name">I'm M. Rizwan</h3>
+            <span class="tag about-role">Senior Full Stack AI Engineer</span>
+            <p class="about-lead">
+                Full Stack AI Engineer with 4+ years of experience building end-to-end AI-driven applications. Specialized in Generative AI, including agent frameworks, RAG pipelines, MCP architectures, and vector databases (Neo4j, Pinecone).
             </p>
-            <div class="box-container" style="font-size: 25px;">
+            <p class="about-text">
+                Proficient in Python, Django, FastAPI, React, and Next.js, along with TensorFlow, PyTorch, LangChain, and Hugging Face. Experienced in designing scalable APIs, integrating AI models into production systems, and delivering secure, high-performance solutions—from data processing and model deployment through frontend integration—with a focus on scalability, reliability, and ethical AI practices.
+            </p>
+            <div class="box-container">
                 <div class="box">
-                    <p style="font-size: 20px;"><span> email : </span> mrizwanoffical786@gmail.com</p>
-                    <p style="font-size: 20px;"><span> place : </span> Lahore, Pakistan</p>
+                    <p><span> email : </span> mrizwanoffical786@gmail.com</p>
+                    <p><span> phone : </span> +92 309 8581002</p>
+                    <p><span> place : </span> Lahore, Punjab, Pakistan</p>
                 </div>
             </div>
             <div class="resumebtn">
@@ -142,8 +95,21 @@
 
 <!-- skills section starts -->
 <section class="skills" id="skills">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills by Job Category</h2>
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Technical <span>Skills</span></h2>
     <div class="container">
+    <div class="skills-cv-summary">
+        <p><strong>Languages:</strong> C++, Python, R, SQL, Cypher</p>
+        <p><strong>Machine Learning:</strong> Scikit-learn, TensorFlow, Keras, PyTorch</p>
+        <p><strong>Deep Learning:</strong> CNNs, RNNs, LSTMs, Transformers (BERT, GPT), NLP</p>
+        <p><strong>Generative AI:</strong> LlamaIndex, LangChain, LangGraph, RAG, agent frameworks, multi-modal conversational pipelines (MCP), Abacus AI, Hugging Face Transformers, n8n, Weaviate, Pinecone, ChromaDB</p>
+        <p><strong>Data Science:</strong> Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Apache Spark, PostgreSQL</p>
+        <p><strong>Frameworks:</strong> HTML, CSS, Django, Django REST Framework, Flask, Streamlit, FastAPI, React, Next.js</p>
+        <p><strong>Chatbot &amp; AI integration:</strong> OpenAI API (GPT-4o), real-time streaming, multi-language (English, Arabic), context-aware chatbots</p>
+        <p><strong>Knowledge graphs:</strong> Neo4j, Cypher query optimization, knowledge graph integration for AI</p>
+        <p><strong>Cloud &amp; DevOps:</strong> AWS, Azure (Databricks), GCP (Cloud Run), Git, GitHub, Docker, Coolify</p>
+        <p><strong>Tools:</strong> Linux, Excel, Jupyter, Google Colab, VS Code, Cursor, PyCharm, RStudio</p>
+        <p><strong>Remote:</strong> Google Meet, Zoom</p>
+    </div>
 
 <!-- Data Science Category -->
 <div class="category" style="margin-bottom: 40px;">
@@ -507,32 +473,12 @@
     <div class="box-container">
         <div class="box">
             <div class="image">
-                <img draggable="false" src="./assets/images/educat/kicks.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Artificial Intelligence (Machine Learning and Deep Learning)</h3>
-                <p>AL Khawarizmi Institute of Computer science, UET Lahore</p>
-                <h4> Feb-2022 - Sep-2022 | Completed</h4>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
                 <img draggable="false" src="./assets/images/educat/virtual-university-of-pakistan.webp" alt="">
             </div>
             <div class="content">
-                <h3>Bachelor of Science in Computer Science</h3>
+                <h3>Bachelor of Computer Science</h3>
                 <p>Virtual University of Pakistan | Lahore</p>
-                <h4>03/2020-04/2024 | Completed</h4>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img draggable="false" src="./assets/images/educat/corvit.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Artificial Intelligence (Python, Machine Learning) </h3>
-                <p>Corvit Systems Lahore</p>
-                <h4>Jun-2021 - Nov-2021 | Completed</h4>
+                <h4>Mar 2019 – Apr 2023 | Completed</h4>
             </div>
         </div>
         <div class="box">
@@ -540,9 +486,39 @@
                 <img draggable="false" src="./assets/images/educat/pgc.jpg" alt="">
             </div>
             <div class="content">
-                <h3>Faculty of Science (FSc) </h3>
-                <p>Punjab Group of Colleges</p>
-                <h4>04/2017-02/2020 | Completed</h4>
+                <h3>FSc (Engineering)</h3>
+                <p>Punjab Group of Colleges | Lahore</p>
+                <h4>Apr 2017 – Feb 2019 | Completed</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/corvit.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Machine Learning Course</h3>
+                <p>Corvit Systems Lahore</p>
+                <h4>Jun 2021 – Nov 2021 | Completed</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/kicks.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Deep Learning Course</h3>
+                <p>Al-Khawarizmi Institute of Computer Science (KICS), UET Lahore</p>
+                <h4>Feb 2022 – Sep 2022 | Completed</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/certificates_and_courses_images/Data_analyst.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Data Analytics &amp; Business Intelligence Training</h3>
+                <p>DigiSkills | Lahore</p>
+                <h4>Jul 2022 – Oct 2022 | Completed</h4>
             </div>
         </div>
     </div>
@@ -613,7 +589,7 @@
             <img draggable="false" src="./assets/images/certificates_and_courses_images/HCAI.jpg.png" alt="Artificial Intelligence Certificate" style="width: 100%; height: auto;" />
             <div class="content">
                 <div class="tag">
-                    <h3>Artificial Intelligence Certificate</h3>
+                    <h3>Huawei Artificial Intelligence Certificate</h3>
                 </div>
                 <div class="desc">
                     <p>Certified in Huawei Artificial Intelligence, focusing on AI concepts, machine learning algorithms, and practical applications for real-world problem-solving.</p>
@@ -715,18 +691,17 @@
 
 <!-- work project section starts -->
 <section class="work" id="work">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Notable <span>Projects</span></h2>
     <div class="project-category">
-        <h3 class="heading"><i class="fas fa-laptop-code"></i><span> Generative AI</span></h3>
         <div class="box-container">
             <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/exploretech.png" alt="Object Detection on Edge Devices" style="width: 100%; height: auto;" />
+                <img draggable="false" src="./assets/images/projects/gutenberg.png" alt="AI-Powered Penetration Testing Platform" style="width: 100%; height: auto;" />
                 <div class="content">
                     <div class="tag">
-                        <h3>Custom Chatbot for Hotel Tech Procurement </h3>
+                        <h3>AI-Powered Penetration Testing &amp; Security Assessment</h3>
                     </div>
                     <div class="desc">
-                        <p>The project involved developing a custom chatbot tailored for hotel tech procurement, leveraging advanced AI models to provide context-aware, conversational responses.</p>
+                        <p>Intelligent security testing with Python and GPT-4: automated scenarios, real-time vulnerability assessment, and a 3-stage LangChain pipeline for test generation, execution, and scoring. PostgreSQL with Prisma, Redis caching, cron-based jobs, and a React dashboard over a FastAPI backend.</p>
                         <div class="btns">
                             <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
                             <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
@@ -735,13 +710,58 @@
                 </div>
             </div>
             <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/gutenberg.png" alt="Resume Matcher With AI Model" style="width: 100%; height: auto;" />
+                <img draggable="false" src="./assets/images/projects/exploretech.png" alt="Hotel tech procurement chatbot" style="width: 100%; height: auto;" />
                 <div class="content">
                     <div class="tag">
-                        <h3>Gutenberg Book Analyzer AI Agent</h3>
+                        <h3>Custom Chatbot — Hotel Tech Procurement Advisor</h3>
                     </div>
                     <div class="desc">
-                        <p>The Gutenberg Analyzer is a full-stack web application built with Django and Python, designed to fetch, store, and analyze public domain books from Project Gutenberg.</p>
+                        <p>GPT-4o chatbot on a custom knowledge graph: Neo4j with dynamic Cypher generation, Django streaming to the frontend, conversation history, and English/Arabic support with robust edge-case handling.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/nvidia.jpg" alt="MobileNet on edge devices" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Real-Time Object Detection — MobileNet on Edge</h3>
+                    </div>
+                    <div class="desc">
+                        <p>MobileNet deployed on NVIDIA Jetson Nano for efficient real-time detection in low-power, resource-constrained environments.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/job-matching.png" alt="AI resume screening" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>AI-Driven Resume Screening &amp; Management</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Advanced recruiter search (skills, experience, location), AI ranking against job descriptions, PDF-only bulk upload validation, and a full resume management UI for screening at scale.</p>
+                        <div class="btns">
+                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img draggable="false" src="./assets/images/projects/ars.jpg" alt="Automated Retail System" style="width: 100%; height: auto;" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>Automated Retail System (ARS) on Raspberry Pi</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Receipt generation and data extraction with computer vision for product detection, Amazon S3 storage, and in-store deployment for real-time sales processing.</p>
                         <div class="btns">
                             <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
                             <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
@@ -751,162 +771,7 @@
             </div>
         </div>
     </div>
-    <div class="project-category">
-        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>AI & Machine Learning Projects</span></h3>
-        <div class="box-container">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/nvidia.jpg" alt="Object Detection on Edge Devices" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Object Detection on Edge Devices</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Deployed MobileNet for real-time object detection on NVIDIA Jetson Nano, leveraging its lightweight architecture.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/job-matching.png" alt="Resume Matcher With AI Model" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Resume Matcher With AI Model</h3>
-                    </div>
-                    <div class="desc">
-                        <p>AI-powered resume matcher that analyzes candidates against job descriptions to streamline recruitment. It enhances hiring acc by quickly identifying the best-fit Resumes.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project-category">
-        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>Web Development Projects</span></h3>
-        <div class="box-container">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/ecommrce.png" alt="E-Com Store Platform Development" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>E-Com Store Platform Development</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Developed an e-com platform with user authentication, product management, and a REST API, ensuring a responsive interface for an enhanced shopping experience.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/food website.jpg" alt="Food & Veggie E-Commerce Website" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Food & Veggie E-Commerce Website</h3>
-                    </div>
-                    <div class="desc">
-                        <p>A food and veggie e-commerce website for fresh produce, offering seamless online shopping, local delivery, and a wide variety of organic options.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                        <a href="https://github.com/mrizwanakram/Ecomerce-website-for-foods-and-Vegetables/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project-category">
-        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>Data Analysis Projects</span></h3>
-        <div class="box-container">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/bi.webp" alt="BI Sales Report for Superstore" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>BI Sales Report for Superstore</h3>
-                    </div>
-                    <div class="desc">
-                        <p>A BI Sales Report for Superstore analyzes sales data to identify trends, measure performance, and provide insights for strategic decision-making.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/flight-ticket-prices.jpeg" alt="Flight Ticket Fare Forecasting (FFF)" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Flight Ticket Fare Forecasting (FFF)</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Developed a forecasting model using ML to predict flight ticket prices, enabling users to optimize travel costs based on data-driven insights</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="project-category">
-        <h3 class="heading"><i class="fas fa-laptop-code"></i><span>Other Projects</span></h3>
-        <div class="box-container">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/number_plate_img.jpg" alt="Plate Recognition using DL" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Plate Recognition using DL</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Deep learning-based plate recognition system that accurately identifies and processes vehicle license plates in real time.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/ars.jpg" alt="Automated Retail System (ARS)" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Automated Retail System (ARS)</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Created a Ras_Pi-based retail solution that automates inventory management and customer transactions, enhancing efficiency in retail operations.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/cyberbullying.jpg" alt="Cyberbullying Detection with ML" style="width: 100%; height: auto;" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Cyberbullying Detection with ML</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Created a machine learning model to detect cyberbullying in online interactions, enabling early intervention and fostering safer online spaces.</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mrizwanakram/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="view-more-btn">View More</button>
+    <button class="view-more-btn" type="button" style="display: none;" aria-hidden="true">View More</button>
 </section>
 <!-- work project section ends -->
 
@@ -917,39 +782,42 @@
         <div class="container right">
             <div class="content">
                 <div class="tag">
-                    <h1>Codezbit</h1>
+                    <h1>Infolyze</h1>
                 </div>
                 <div class="desc">
-                    <h2>Python Developer</h2>
-                    <p>Feb, 2024 - Present</p>
-                </div>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <div class="tag">
-                    <h2>AIOBC</h2>
-                </div>
-                <div class="desc">
-                    <h3>Machine Learning Engineer </h3>
-                    <p>Aug 2023 - Feb 2024</p>
+                    <h2>Full Stack AI Engineer</h2>
+                    <p>Jun 2025 – Present · Lahore</p>
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">End-to-end AI platforms with Python, Django, FastAPI, React, and Next.js; LangChain, OpenAI, and Hugging Face; agent pipelines and RAG; PostgreSQL, Redis, Docker on AWS, Azure, and GCP.</p>
                 </div>
             </div>
         </div>
         <div class="container left">
             <div class="content">
                 <div class="tag">
-                    <h2>Machine Learning 1</h2>
+                    <h2>CODEZBIT</h2>
                 </div>
                 <div class="desc">
-                    <h3>Data Science | Internship</h3>
-                    <p>Nov, 2022 - Jan 2023</p>
+                    <h3>Python Developer</h3>
+                    <p>Mar 2024 – May 2025 · Lahore, Pakistan</p>
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Django REST APIs, NLP and LLM integration (LangChain), Neo4j knowledge graphs with Cypher, and ML model training and deployment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2>AIOBC.IO</h2>
+                </div>
+                <div class="desc">
+                    <h3>Machine Learning Engineer</h3>
+                    <p>Jul 2023 – Feb 2024 · Islamabad, Pakistan</p>
+                    <p style="font-size: 1rem; margin-top: 0.5rem;">Edge ML on NVIDIA Jetson Nano, dataset annotation, Flask APIs, computer vision (RCNN, MRCNN, UNET), transfer learning, and ARS on Raspberry Pi with AWS S3.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="morebtn">
-        <!-- <a href="../experience/index.html" class="btn"><span>View All</span> -->
+        <a href="./experience/index.html" class="btn"><span>Experience page</span>
             <i class="fas fa-arrow-right"></i>
         </a>
     </div>
@@ -962,7 +830,7 @@
     <div class="container">
         <div class="content">
             <div class="image-box">
-                <img draggable="false" src="./assets/images/contact1.png" alt="">
+                <img draggable="false" src="./assets/images/projects/m-rizwan-profile.png" alt="M. Rizwan">
             </div>
             <form id="contact-form">
                 <div class="form-group">
@@ -1036,7 +904,7 @@
 <section class="footer">
     <div class="box-container">
         <div class="box">
-            <h3>Rizwan's Portfolio</h3>
+            <h3>M. Rizwan's Portfolio</h3>
             <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
         </div>
         <div class="box">
@@ -1053,16 +921,16 @@
             <h3>contact info</h3>
             <p> <i class="fas fa-phone"></i>+92 3098581002</p>
             <p> <i class="fas fa-envelope"></i>mrizwanoffical786@gmail.com</p>
-            <p> <i class="fas fa-map-marked-alt"></i>Lahore, Pakistan</p>
+            <p> <i class="fas fa-map-marked-alt"></i>Lahore, Punjab, Pakistan</p>
             <div class="share">
                 <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
                 <a href="https://github.com/mrizwanakram/" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-                <a href="mailto:mrizwanoffical@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                <a href="mailto:mrizwanoffical786@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
                 <a href="https://twitter.com/" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
             </div>
         </div>
     </div>
-    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216"> M.Rizwan</a></h1>
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/m-rizwan-akram-8795b7216"> M. Rizwan</a></h1>
 </section>
 <!-- footer section ends -->
 

@@ -59,23 +59,32 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | M. Rizwan";
+            $("#favicon").attr("href", "assets/images/projects/m-rizwan-profile.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            $("#favicon").attr("href", "assets/images/projects/m-rizwan-profile.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
+// Note: avoid raw "&" in strings — Typed.js 2.x writes via the HTML parser and "&..." freezes until a valid entity completes.
 var typed = new Typed(".typing-text", {
-    strings: ["Data Science ", "Python Development ", "Machine Learning Development", "Deep Learning Development",  "Genrative AI Development", "Django Development", "Web development"],
+    strings: [
+        "Senior Full Stack AI Engineer",
+        "Generative AI and RAG",
+        "LangChain and Agent Frameworks",
+        "Django and FastAPI",
+        "React and Next.js",
+        "ML and LLM Integration"
+    ],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 500,
+    smartBackspace: true,
 });
 // <!-- typed js effect ends -->
 
